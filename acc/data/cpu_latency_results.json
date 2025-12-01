@@ -1,0 +1,65 @@
+{
+  "summary": {
+    "total_ops": 7,
+    "elements": 49152,
+    "rows": 64
+  },
+  "results": [
+    {
+      "op": "eltwise_add",
+      "config": 0,
+      "elements": 49152,
+      "rows": 64,
+      "latency_ns": 2768800,
+      "latency_ms": 2.7688
+    },
+    {
+      "op": "safe_softmax",
+      "config": 1,
+      "elements": 49152,
+      "rows": 64,
+      "latency_ns": 1446500,
+      "latency_ms": 1.4465
+    },
+    {
+      "op": "eltwise_mul",
+      "config": 2,
+      "elements": 49152,
+      "rows": 64,
+      "latency_ns": 1387300,
+      "latency_ms": 1.3873
+    },
+    {
+      "op": "gelu_bf16",
+      "config": 3,
+      "elements": 49152,
+      "rows": 64,
+      "latency_ns": 197900,
+      "latency_ms": 0.1979
+    },
+    {
+      "op": "silu",
+      "config": 4,
+      "elements": 49152,
+      "rows": 64,
+      "latency_ns": 340700,
+      "latency_ms": 0.3407
+    },
+    {
+      "op": "rms_norm",
+      "config": 5,
+      "elements": 49152,
+      "rows": 64,
+      "latency_ns": 334800,
+      "latency_ms": 0.3348
+    },
+    {
+      "op": "layer_norm",
+      "config": 6,
+      "elements": 49152,
+      "rows": 64,
+      "latency_ns": 267500,
+      "latency_ms": 0.2675
+    }
+  ]
+}
