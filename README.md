@@ -18,8 +18,7 @@ python .\\generate_X_test_tensor_bf16.py \# Generate matrix X
 
 If the following output appears, the generation is successful:
 
-![](./media/image1.png){width="5.768055555555556in"
-height="1.3722222222222222in"}
+![](./media/image1.png)
 
 Continue with:
 
@@ -29,7 +28,7 @@ python .\\generate_golden_outputs.py \# Generate Yref,f
 
 When the output shown below appears, the process is successful:
 
-![](./media/image2.png){width="5.768055555555556in" height="3.2625in"}
+![](./media/image2.png)
 
 After this step, seven .bin files will appear in the directory.\
 These files are the reference outputs of the seven functions generated
@@ -54,8 +53,7 @@ Example: Softmax Simulation
 
 a\. In Vivado, set test_softmax_top as the top module:
 
-![](./media/image3.png){width="5.768055555555556in"
-height="3.0319444444444446in"}
+![](./media/image3.png)
 
 b\. Run the simulation:
 
@@ -68,8 +66,7 @@ successful.\
 The value DUT count represents the number of computation cycles counted
 by the internal timer.
 
-![](./media/image4.png){width="5.768055555555556in"
-height="1.5381944444444444in"}
+![](./media/image4.png)
 
 c\. After the simulation completes, a file named:
 
@@ -90,8 +87,7 @@ python .\\compare_softmax_bins.py
 
 If the following output appears, the comparison is successful:
 
-![](./media/image5.png){width="5.768055555555556in"
-height="3.826388888888889in"}
+![](./media/image5.png)
 
 Explanation of Output
 
@@ -108,7 +104,7 @@ Explanation of Output
 The tool also prints key rows that require special evaluation\
 (e.g., rows 20--25 for Softmax):
 
-![](./media/image6.png){width="5.768055555555556in" height="2.85in"}
+![](./media/image6.png)
 
 # 2. Synthesis
 
@@ -121,21 +117,17 @@ Set top_test as the top module and run synthesis.\
 Since synthesis takes a long time, the following shows the pre-generated
 results:
 
-![](./media/image7.png){width="5.768055555555556in"
-height="2.938888888888889in"}
+![](./media/image7.png)
 
 Then set the clock period as follows:
 
-![](./media/image8.png){width="5.768055555555556in"
-height="3.026388888888889in"}
+![](./media/image8.png)
 
 Proceed with Implementation, resulting in:
 
-![](./media/image9.png){width="5.768055555555556in"
-height="3.026388888888889in"}
+![](./media/image9.png)
 
-![](./media/image10.png){width="5.768055555555556in"
-height="3.026388888888889in"}
+![](./media/image10.png)
 
 # 3. **Board Testing**
 
@@ -152,14 +144,12 @@ and done interfaces to count the number of computation cycles, and the
 results are printed through the UART serial port.\
 The overall SOC setup is shown in the figure below:
 
-![be84281f5edfd946849e5de232e19e22](./media/image11.png){width="5.743055555555555in"
-height="2.436111111111111in"}
+![be84281f5edfd946849e5de232e19e22](./media/image11.png)
 
 ## 3.2 **Synthesis**
 
 The synthesis results are as follows:\
-![](./media/image12.png){width="5.764583333333333in"
-height="3.2083333333333335in"}
+![](./media/image12.png)
 
 ## 3.3 **Vitis Platform Setup**
 

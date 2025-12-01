@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="acc" location="C:/Users/ASUS/Desktop/BF16_ACT/acc_vitis/acc" platform="C:/Users/ASUS/Desktop/BF16_ACT/acc_vitis/soc_base/export/soc_base/soc_base.xpfm" platformUID="xilinx:vcu118::0.0(custom)" systemProject="acc_system" sysConfig="soc_base" runtime="C/C++" cpu="standalone_domain" cpuInstance="microblaze_0" os="standalone" mssSignature="c219019e8963a8ee852ab49b08b9a029">
+  <configuration name="Debug" id="xilinx.gnu.mb.exe.debug.1036316263" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.mb.exe.release.807718222" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="empty_application"/>
+</sdkproject:SdkProject>
